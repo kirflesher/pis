@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css">
+</head>
+<body class="article">
+    <div class="header">
+        <a href="{% url 'archive' %}" class="all-posts-link">Все записи</a>
+        <h1 class="page-title">Архив статей</h1>
+    </div>
+    <div class="article">
+        <div class="article-header">
+            <h2 class="article-title">{{ post.title }}</h2>
+            <div class="article-meta">
+                <div class="article-author-name">{{ post.author.username }}</div>
+                <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+        </div>
+        <div class="article-content">
+            {{ post.text|linebreaks }}
+        </div>
+    </div>
+</body>
+</html>

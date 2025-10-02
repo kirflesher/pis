@@ -1,0 +1,243 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: #16a085;
+    padding: 20px 0;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-title {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: #2c909b;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.all-posts-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.all-posts-link:hover {
+    text-decoration: underline;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.one-post {
+    background-color: #16a085;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+.article-info {
+    overflow: hidden;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+
+.article-created-date {
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-style: italic;
+}
+
+.article-text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.article {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-header {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.article-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.article-meta {
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.article-author-name {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+
+.article-created-date {
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-style: italic;
+}
+
+.article-content {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+    background-color: #16a085;
+    padding: 20px;
+    border-radius: 5px;
+}
+body.create-post {
+    background: #1abc9c;
+}
+.create-post-content {
+    width: 960px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.article-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.form-textarea {
+    height: 300px;
+    resize: vertical;
+}
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.submit-btn {
+    background: #16a085;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.submit-btn:hover {
+    background: #1abc9c;
+}
+.error-message {
+    color: #ff6b6b;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 4px solid #ff6b6b;
+}
+.create-post-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #3eb489; 
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+body.register, body.login {
+    background: #1abc9c;
+}
+.register-content, .login-content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.all-posts-link:nth-child(2) {
+    right: 100px;
+}
+.all-posts-link:nth-child(3) {
+    right: 20px;
+}
+.form-links {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-links a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+.form-links a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css">
+</head>
+<body class="register">
+    <div class="header">
+        <a href="{% url 'archive' %}" class="all-posts-link">Все записи</a>
+        <h1 class="page-title">Регистрация</h1>
+    </div>
+    <div class="register-content">
+        <div class="article-form">
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Имя пользователя"
+                    value="{{ username|default:'' }}" class="form-input" required>
+                <input type="email" name="email" placeholder="Email"
+                    value="{{ email|default:'' }}" class="form-input" required>
+                <input type="password" name="password" placeholder="Пароль"
+                    class="form-input" required>
+                <input type="password" name="confirm_password" placeholder="Подтвердите пароль"
+                    class="form-input" required>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+            {% if error %}
+            <div class="error-message">
+                {{ error }}
+            </div>
+            {% endif %}
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="{% url 'login' %}" style="color: #ffffff; text-decoration: underline;">
+                    Уже есть аккаунт? Войдите
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
